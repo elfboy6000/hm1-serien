@@ -49,4 +49,3 @@ if __name__ == "__main__":
 #
 # realistische alpha-werte dürften im Bereich von 1 bis 2 liegen, da Krankheiten meist nicht sofort aussterben, aber auch nicht chaotisch verlaufen
 # Aufgabe c) Siehe S04_Aufg1.pdf
-
