@@ -4,6 +4,7 @@ import numpy as np
 A = np.array([[1., 2., -1.],
               [4., -2., 6.],
               [3., 1., 0.]])
+b = np.array([9., -4., 9.])
 m, n = A.shape
 R = A.copy().astype(float)
 Q = np.eye(m)
@@ -33,3 +34,14 @@ print("A =\n", A)
 print("Q =\n", Q)
 print("R =\n", R)
 print("Überprüfung A ≈ Q @ R:", np.allclose(A, Q @ R))
+
+# 1) y = Q^T b
+y = Q.T @ b
+
+# 2) Rückwärtseinsetzen in R x = y
+x = np.zeros(n)
+for i in range(n - 1, -1, -1):
+    x[i] = (y[i] - R[i, i+1:] @ x[i+1:]) / R[i, i]
+
+print("x =", x)
+
