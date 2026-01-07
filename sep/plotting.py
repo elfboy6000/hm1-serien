@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # 3) Plot erstellen
 plt.figure()
 # 3.5) label setzen
-plt.plot(x, y, label="f(x) = ...")
+#plt.plot(x, y, label="f(x) = ...")
 
 # 4) Deko
 plt.axhline(0, color="black", linewidth=0.8)
