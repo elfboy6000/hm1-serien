@@ -102,3 +102,4 @@ if __name__ == "__main__":
     b = np.array([5, -13, 14])
 
     x = gauss_seidel_iteration(A, b, tol=1e-9, max_iter=10)
+
