@@ -95,13 +95,10 @@ def gauss_seidel_iteration(A, b, x0=None, tol=1e-6, max_iter=100):
 
 
 if __name__ == "__main__":
+    # todo different norms 1, 2, ∞
+
     # Example from the textbook (Beispiel 4.17)
-    A = [
-        [4, -1, 1],
-        [-2, 5, 1],
-        [1, -2, 5]
-    ]
+    A = np.array([[7, -2, -2], [-2, 7, -2], [-2, 7, -2]])
+    b = np.array([5, -13, 14])
 
-    b = [5, 11, 12]
-
-    x = gauss_seidel_iteration(A, b, tol=1e-5, max_iter=10)
+    x = gauss_seidel_iteration(A, b, tol=1e-9, max_iter=10)
