@@ -36,3 +36,6 @@ print(fixpunktiteration('x**3+0.3', 0.3389, 1e-5))  # Converges
 print(fixpunktiteration('x**3+0.3', 0.7864))  # Diverges
 
 print(fixpunktiteration('(x-0.3)**(1/3)', 0.7864))  # Converges
+
+# Fixed: use E (Euler's number) or exp() function in sympy
+print(fixpunktiteration('(((E**x)+(E**-x))/2)-(3/2)',  1.5, 1e-6))

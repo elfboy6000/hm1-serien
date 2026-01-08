@@ -5,6 +5,8 @@ A = np.array([[1., 2., -1.],
               [4., -2., 6.],
               [3., 1., 0.]])
 b = np.array([9., -4., 9.])
+
+
 m, n = A.shape
 R = A.copy().astype(float)
 Q = np.eye(m)

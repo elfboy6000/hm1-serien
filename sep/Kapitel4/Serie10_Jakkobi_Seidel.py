@@ -204,10 +204,10 @@ def print_result(opt: IterMethod, xn: NDArray[np.float64], n: int, n2: int) -> N
 
 
 if __name__ == "__main__":
-    A = np.array([[8, 5, 2], [5, 9, 1], [4, 2, 7]])
-    b = np.array([19, 5, 34])
-    x0 = np.array([1, -1, 3])
-    tol = 1e-4
+    A = np.array([[7, -2, -2], [-2, 7, -2], [-2, 7, -2]])
+    b = np.array([5, -13, 14])
+    x0 = np.array([0, 0, 0])
+    tol = 1e-9
 
     xn_jacobi, n_jacobi, n2_jacobi = solveMatrixIter(
         A, b, x0, tol=tol, opt=IterMethod.JACOBI

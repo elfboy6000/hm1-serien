@@ -1,0 +1,1 @@
+# a_priori fehlerabschätzung mit beliebiger formel umgesetzt
