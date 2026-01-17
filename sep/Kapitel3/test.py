@@ -1,10 +1,8 @@
 import sympy as sp
-
-
 def fixpunktiteration(func_str: str, x0: float, tol: float = 1e-7, max_iter: int = 100) -> (str, str, str):
     x = sp.symbols('x')
 
-    g = sp.lambdify(func_str)
+    g = sp.sympify(func_str)
 
     # Calculate derivative and evaluate at starting point
     g_prime = sp.diff(g, x)
